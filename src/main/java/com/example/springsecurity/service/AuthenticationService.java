@@ -62,7 +62,7 @@ public class AuthenticationService {
             .lastname(registerRequest.getLastname())
             .email(registerRequest.getEmail())
             .password(passwordEncoder.encode(registerRequest.getPassword()))
-            .role(Role.USER)
+            .role(registerRequest.getRole())
             .build();
     var existingUser = userRepository.findUserByEmail(registerRequest.getEmail());
     if (existingUser.isPresent()) {
