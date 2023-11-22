@@ -1,6 +1,5 @@
 package com.example.springsecurity.entity;
 
-import com.example.springsecurity.entity.TokenType.TokenType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -5,7 +5,7 @@ import com.example.springsecurity.dto.AuthenticationResponse;
 import com.example.springsecurity.dto.RegisterRequest;
 import com.example.springsecurity.entity.Role;
 import com.example.springsecurity.entity.Token;
-import com.example.springsecurity.entity.TokenType.TokenType;
+import com.example.springsecurity.entity.TokenType;
 import com.example.springsecurity.entity.User;
 import com.example.springsecurity.repository.TokenRepository;
 import com.example.springsecurity.repository.UserRepository;
@@ -17,7 +17,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
